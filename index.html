@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/main/header.css" rel="stylesheet">
+    <link href="css/main/hero.css" rel="stylesheet">
+    <link href="css/main/team.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a class="header__logo" href="./index.html">
+            <svg height="316" version="1.2" viewBox="0 0 548 316" width="548" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <image height="205" href="data:image/png;base64,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" id="img1"
+                           width="347"/>
+                </defs>
+                <style>
+                </style>
+                <use href="#img1" id="Background" x="120" y="58"/>
+            </svg>
+        </a>
+    </div>
+</header>
+<section class="hero">
+    <div class="hero__overlay">
+        <div class="container">
+            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        </div>
+    </div>
+</section>
+<section class="team">
+    <div class="container">
+        <h2 class="team__title">Наша команда</h2>
+
+        <ul class="team__list">
+            <!-- Ігор Дем'яненко -->
+            <li class="team__item">
+                <img alt="" class="team__img" src="img/card1.jpg">
+
+                <div class="team__wrap">
+                    <h3 class="team__name">Тараканівський форт (або Нова Дубенська фортеця) — це унікальна оборонна
+                        споруда XIX століття.Це напівзруйнований чотирирівневий комплекс казематів, оточений ровами,
+                        який у минулому слугував стратегічним
+                        військовим об'єктом, а зараз є містичною туристичною пам'яткою.</h3>
+                    <p class="team__taxt">Знаходиться на Рівненщині</p>
+
+                    <ul class="team__items">
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Ольга Рєпіна -->
+            <li class="team__item">
+                <img alt="Ольга Рєпіна" class="team__img" src="img/olha.jpg">
+
+                <div class="team__wrap">
+                    <h3 class="team__name">Ольга Рєпіна</h3>
+                    <p class="team__taxt">Frontend Developer</p>
+
+                    <ul class="team__items">
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Микола Тарасов -->
+            <li class="team__item">
+                <img alt="Микола Тарасов" class="team__img" src="img/mukola.jpg">
+
+                <div class="team__wrap">
+                    <h3 class="team__name">Микола Тарасов</h3>
+                    <p class="team__taxt">Marketing</p>
+
+                    <ul class="team__items">
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Михайло Єрмаков -->
+            <li class="team__item">
+                <img alt="Михайло Єрмаков" class="team__img" src="img/michael.jpg">
+
+                <div class="team__wrap">
+                    <h3 class="team__name">Михайло Єрмаков</h3>
+                    <p class="team__taxt">UI Designer</p>
+
+                    <ul class="team__items">
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="team__itm">
+                            <a class="team__link" href="">
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
