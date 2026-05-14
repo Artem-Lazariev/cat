@@ -3,9 +3,15 @@ const arrayloc = [
         name: "test",
         img: "card1.jpg",
         info: "test",
-        where: "test"
-    }
+        where: "test",
+        facebook: "https://facebook.com/",
+        instagram: "https://instagram.com/",
+        twitter: "https://twitter.com/",
+        google: "https://google.com/",
+    },
+
 ];
+
 function gen(item) {
     return `
         <li class="team__item">
@@ -25,41 +31,85 @@ function gen(item) {
                 </p>
 
                 <ul class="team__items">
-                    <li class="team__itm">
-                        <a class="team__link" href="">
-                            <svg class="team__icon">
-                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="team__itm">
-                        <a class="team__link" href="">
-                            <svg class="team__icon">
-                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="team__itm">
-                        <a class="team__link" href="">
-                            <svg class="team__icon">
-                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="team__itm">
-                        <a class="team__link" href="">
-                            <svg class="team__icon">
-                                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
+
+                    ${
+        item.instagram
+            ? `
+                        <li class="team__itm">
+                            <a 
+                                class="team__link" 
+                                href="${item.instagram}" 
+                                target="_blank"
+                            >
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    `
+            : ""
+    }
+
+                    ${
+        item.twitter
+            ? `
+                        <li class="team__itm">
+                            <a 
+                                class="team__link" 
+                                href="${item.twitter}" 
+                                target="_blank"
+                            >
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    `
+            : ""
+    }
+
+                    ${
+        item.facebook
+            ? `
+                        <li class="team__itm">
+                            <a 
+                                class="team__link" 
+                                href="${item.facebook}" 
+                                target="_blank"
+                            >
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    `
+            : ""
+    }
+
+                    ${
+        item.google
+            ? `
+                        <li class="team__itm">
+                            <a 
+                                class="team__link" 
+                                href="${item.google}" 
+                                target="_blank"
+                            >
+                                <svg class="team__icon">
+                                    <use href="./img/symbol-defs.svg#icon-google"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    `
+            : ""
+    }
+
                 </ul>
             </div>
         </li>
     `;
 }
-const team = document.getElementById('team');
 
-arrayloc.forEach(item => {
-    team.innerHTML += gen(item);
-});
+const team = document.getElementById("team");
+
+team.innerHTML = arrayloc.map(gen).join("");
