@@ -39,11 +39,6 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (min-width: 1200px) {
-    .team__list {
-        flex-wrap: nowrap;
-    }
-}
 .team__item {
     flex-basis: 100%;
     border-radius: 0px 0px 4px 4px;
@@ -106,8 +101,8 @@
 }
 .team__link:hover, .team__link:focus {
     border: none;
-    background-color: #2196f3;
-    outline: 0px solid #2196f3;
+    background-color: rgba(36, 170, 85, 0.84);
+    outline: 0px solid rgba(36, 170, 85, 0.84);
 }
 .team__link:hover .team__icon, .team__link:focus .team__icon {
     fill: #fff;
