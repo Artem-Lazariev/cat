@@ -68,7 +68,7 @@ const arrayloc = [
     }
 ];
 
-// 2. Функція генерації HTML
+// 2. Функція генерації HTMLL
 function gen(item) {
     return `
         <li class="team__item">
