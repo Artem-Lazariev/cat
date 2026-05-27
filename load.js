@@ -50,7 +50,7 @@ const arrayloc = [
         instagram: "https://www.google.com/search?q=Симиренко+палац+instagram",
         x: "https://www.google.com/search?q=Симиренко+палац+twitter",
         google: "https://www.google.com/search?q=Палац+Симиренка",
-        googleMaps: String('https://www.google.com.ua/maps/place/49°23'33.3"N+30°59'04.6"E/@49.3915054,30.9811023,15z/data=!4m4!3m3!8m2!3d49.3925833!4d30.9846111?hl=ru&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D')
+        googleMaps: "https://www.google.com.ua/maps/place/вул.+Симиренка,+Сидорівка,+Черкаська+область,+19452/@49.3952456,30.9778325,17z/data=!3m1!4b1!4m12!1m5!3m4!2zNDnCsDIzJzMzLjMiTiAzMMKwNTknMDQuNiJF!8m2!3d49.3925833!4d30.9846111!3m5!1s0x40d3c0fd9ad4bdcb:0xe75933e692717fbd!8m2!3d49.3952421!4d30.9804074!16s%2Fg%2F11g61sh5qn?hl=ru&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
                            
     },
     {
