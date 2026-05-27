@@ -50,10 +50,11 @@ const arrayloc = [
         instagram: "https://www.google.com/search?q=Симиренко+палац+instagram",
         x: "https://www.google.com/search?q=Симиренко+палац+twitter",
         google: "https://www.google.com/search?q=Палац+Симиренка",
-        googleMaps: 'https://www.google.com.ua/maps/place/49°23'33.3"N+30°59'04.6"E/@49.3915054,30.9811023,15z/data=!4m4!3m3!8m2!3d49.3925833!4d30.9846111?hl=ru&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D'
+        googleMaps: String('https://www.google.com.ua/maps/place/49°23'33.3"N+30°59'04.6"E/@49.3915054,30.9811023,15z/data=!4m4!3m3!8m2!3d49.3925833!4d30.9846111?hl=ru&entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D')
+                           
     },
     {
-        name: "Червоногородський замок",
+        name: "Червоногородський замок",'
         img: "https://picsum.photos/id/1020/600/400",
         period: "XVII ст. (перебудова у 1822–1840 рр.)",
         style: "Історизм з елементами неоромантизму",
